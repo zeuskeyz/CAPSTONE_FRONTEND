@@ -16,11 +16,11 @@ function AddScoresForm() {
     const handleInputs = event => setNewScore(prev => { return { ...prev, [event.target.name]: event.target.value } })
     const handleSubmission = event => {
         event.preventDefault()
-        axios.post(`https://capstone-pkiz.onrender.com/add-score/${id}/${target}/${kpi}`, newScore).then().catch(error => alert(error.message))
+        axios.post(`/add-score/${id}/${target}/${kpi}`, newScore).then().catch(error => alert(error.message))
         setNewScore(emptyScore)
     }
     useEffect(() => {
-        axios.get(`https://capstone-pkiz.onrender.com/add-score/${id}/${target}/${kpi}`).then(res => { setActuals(res.data) })
+        axios.get(`/add-score/${id}/${target}/${kpi}`).then(res => { setActuals(res.data) })
     }, [actuals, id, target, kpi])
 
     return (

@@ -14,7 +14,7 @@ export default function LoginForm() {
     const handleLogInputs = event => setNewLogin(prev => { return {...prev, [event.target.name]:event.target.value}}) 
     const handleLogin = async event => {
         event.preventDefault()
-        axios.post('https://capstone-pkiz.onrender.com/', newLogin)
+        axios.post('/', newLogin)
         setNewLogin(emptyLogin)
         user ? navigate(`/add-target/${user._id}`) : navigate('/')
     }

@@ -7,7 +7,7 @@ export function Authenticator({children}) {
     const [user, setUser] = useState({})
    
     useEffect(()=>{
-        axios.get('https://capstone-pkiz.onrender.com/loggedIn').then(result => setUser(result.data))
+        axios.get('/loggedIn').then(result => setUser(result.data))
     }, [])
 
     return (
