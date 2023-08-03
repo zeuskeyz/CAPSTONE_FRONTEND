@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Performance Dashboard README
+The Performance Dashboard is a web-based application that provides real-time insights into key performance metrics for Retail shops. It allows you to monitor and analyze various performance indicators to make data-driven decisions and optimize operations.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of Contents
+## Features
+## Getting Started
+## Prerequisites
+## Installation
+## Usage
+## Contributing
+## License
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
+Real-time updates: The dashboard provides real-time updates on performance metrics.
+Data visualization: Performance metrics are displayed using interactive charts and graphs.
+Customizable: Easily customize the dashboard to suit your specific needs and add new metrics.
+## Getting Started
+### Prerequisites
+Node.js: Make sure you have Node.js installed on your system.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository: 
+2. Install dependencies: npm install
+3. Start the development server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+Frontend: The dashboard's frontend is built using React.js.Bootstrap to improve responsiveness of app and Material UI to provide sharper looking components 
 
-### `npm test`
+Backend: The backend is responsible for handling data requests and is built using Node.js and Express.js.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Data Storage: The dashboard leverages a non relational database (MongoDb) to store and retrieve application metrics.
+CORS to allow communication between backend and frontend.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+Here's how to use the Performance Dashboard effectively:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Run the Dashboard: Start the development server by running the following command: npm start
+The dashboard will be accessible at http://localhost:3000 in your web browser.
+2. Once the dashboard is running, you can interact with various widgetsto explore the data. Use the navigation menu to switch between different metrics periods.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Known Bugs
 
-### `npm run eject`
+There are no known bugs on this project. feel free to share.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributions
+We welcome contributions to improve and expand the performance dashboard. To contribute:
+1. Fork this repository.
+2. Create a new branch for your changes.
+3. Make your enhancements and commit your changes.
+4. Submit a pull request describing your changes and the rationale behind them.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Github URL Link
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). You are free to use, modify, and distribute the code as per the terms of this license.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+We wish to express our sincere gratitude to the group of committed individuals below for their   extraordinary dedication and effective teamwork having played a vital role in the creation and achievement of the Performance Dashboard:
+Members of the Team:
 
-### Code Splitting
+1. [Amani Kai]
+2. [Silas Odack]
+3. [Purity Munene]
+4. [Ndege Monda]
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2023
