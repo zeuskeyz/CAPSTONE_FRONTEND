@@ -11,7 +11,7 @@ export default function Dashboard() {
     const{ id } = useParams()
     const [user, setUser] = useState({})
     useEffect(()=>{
-        axios.get(`http://localhost:3001/dashboard/${id}`).then(res=>setUser(res.data)).catch(err=>alert(err.message))
+        axios.get(`https://capstone-pkiz.onrender.com/dashboard/${id}`).then(res=>setUser(res.data)).catch(err=>alert(err.message))
     },[id])
 
     return (

@@ -16,12 +16,12 @@ export default function AddKPIForm() {
 
     const handleSubmission = event => {
         event.preventDefault()
-        axios.post(`http://localhost:3001/add-target/${id}`, newKPI).then().catch(err => console.log(err.message))
+        axios.post(`https://capstone-pkiz.onrender.com/add-target/${id}`, newKPI).then().catch(err => console.log(err.message))
         setNewKPI(emptyKPI)
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/add-target/${id}`).then(res => { setTargets(res.data?.targets) })
+        axios.get(`https://capstone-pkiz.onrender.com/add-target/${id}`).then(res => { setTargets(res.data?.targets) })
     }, [targets, id])
     
     return (
