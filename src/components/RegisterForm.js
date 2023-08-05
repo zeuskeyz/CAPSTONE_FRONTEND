@@ -14,7 +14,7 @@ export default function RegisterForm() {
     const handleRegistration = event => {
         event.preventDefault()
         if (newReg.password === newReg.passComp) {
-            axios.post('api/sign-up', newReg).then(console.log(newReg)).catch(err => console.log(err.message))
+            axios.post('https://server-r8hb.onrender.com/api/sign-up', newReg).then(console.log(newReg)).catch(err => console.log(err.message))
             setNewReg(emptyReg)
             navigate('api/')
         }

@@ -14,9 +14,9 @@ export default function LoginForm() {
     const handleLogInputs = event => setNewLogin(prev => { return {...prev, [event.target.name]:event.target.value}}) 
     const handleLogin = async event => {
         event.preventDefault()
-        axios.post('api/', newLogin)
+        axios.post('https://server-r8hb.onrender.com/api/', newLogin)
         setNewLogin(emptyLogin)
-        user ? navigate(`api/add-target/${user._id}`) : navigate('/')
+        user ? navigate(`https://server-r8hb.onrender.com/api/add-target/${user._id}`) : navigate('/')
     }
 
     return (
