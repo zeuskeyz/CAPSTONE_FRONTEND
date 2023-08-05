@@ -26,11 +26,11 @@ export default function App() {
         <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <Routes>
-            <Route path='/' element={<LandingPage/>}/>
-            <Route path='/sign-up' element={<SignupPage/>}/>
-            {user && <Route path='/dashboard/:id' element={<Dashboard/>}/> }      
-            {user && <Route path='/add-target/:id' element={<AddKPIForm/>}/> }
-            {user && <Route path='/add-score/:id/:target/:kpi' element={<AddScoresForm/>}/> } 
+            <Route path='api/' element={<LandingPage/>}/>
+            <Route path='api/sign-up' element={<SignupPage/>}/>
+            {user && <Route path='api/dashboard/:id' element={<Dashboard/>}/> }      
+            {user && <Route path='api/add-target/:id' element={<AddKPIForm/>}/> }
+            {user && <Route path='api/add-score/:id/:target/:kpi' element={<AddScoresForm/>}/> } 
         </Routes>
         </ThemeProvider>
     );
