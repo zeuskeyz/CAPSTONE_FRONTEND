@@ -14,9 +14,9 @@ export default function LoginForm() {
     const handleLogInputs = event => setNewLogin(prev => { return {...prev, [event.target.name]:event.target.value}}) 
     const handleLogin = async event => {
         event.preventDefault()
-        axios.post('/', newLogin)
+        axios.post('api/', newLogin)
         setNewLogin(emptyLogin)
-        user ? navigate(`/add-target/${user._id}`) : navigate('/')
+        user ? navigate(`api/add-target/${user._id}`) : navigate('/')
     }
 
     return (

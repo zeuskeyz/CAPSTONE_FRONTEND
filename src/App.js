@@ -17,8 +17,7 @@ const darkTheme = createTheme({
   },
 });
 
-/* axios.defaults.withCredentials = true; */
-axios.defaults.baseURL = 'https://capstone-pkiz.onrender.com/'
+axios.defaults.withCredentials = true;
 
 export default function App() {
     const {user} = useContext(AuthContext)

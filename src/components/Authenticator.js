@@ -7,7 +7,7 @@ export function Authenticator({children}) {
     const [user, setUser] = useState({})
    
     useEffect(()=>{
-        axios.get('/loggedIn').then(result => setUser(result.data))
+        axios.get('api/loggedIn').then(result => setUser(result.data))
     }, [])
 
     return (

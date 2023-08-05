@@ -11,7 +11,7 @@ export default function Dashboard() {
     const{ id } = useParams()
     const [user, setUser] = useState({})
     useEffect(()=>{
-        axios.get(`/dashboard/${id}`).then(res=>setUser(res.data)).catch(err=>alert(err.message))
+        axios.get(`api/dashboard/${id}`).then(res=>setUser(res.data)).catch(err=>alert(err.message))
     },[id])
 
     return (

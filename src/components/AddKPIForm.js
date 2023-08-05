@@ -16,12 +16,12 @@ export default function AddKPIForm() {
 
     const handleSubmission = event => {
         event.preventDefault()
-        axios.post(`/add-target/${id}`, newKPI).then().catch(err => console.log(err.message))
+        axios.post(`api/add-target/${id}`, newKPI).then().catch(err => console.log(err.message))
         setNewKPI(emptyKPI)
     }
 
     useEffect(() => {
-        axios.get(`/add-target/${id}`).then(res => { setTargets(res.data?.targets) })
+        axios.get(`api/add-target/${id}`).then(res => { setTargets(res.data?.targets) })
     }, [targets, id])
     
     return (
